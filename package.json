@@ -1,0 +1,26 @@
+{
+  "name": "brodiac",
+  "displayName": "Brodiac",
+  "description": "My color theme",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.64.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Brodiac",
+        "uiTheme": "hc-black",
+        "path": "./themes/Brodiac-color-theme.json"
+      },
+      {
+        "label": "Brodiac Light",
+        "uiTheme": "hc-light",
+        "path": "./themes/Brodiac-light-color-theme.json"
+      }
+    ]
+  }
+}
