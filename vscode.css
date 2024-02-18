@@ -1,0 +1,251 @@
+:root {
+  --tab-height: 26px;
+  --font-size-tab-title: 13px;
+  --font-family: "Iosevka";
+  --vscode-scrollbarSlider-background: transparent;
+  --vscode-scrollbarSlider-activeBackground: transparent;
+  --vscode-scrollbarSlider-hoverBackground: transparent;
+}
+
+.monaco-workbench {
+  --brodiac-background: var(--vscode-editor-background);
+  --brodiac-foreground: var(--vscode-editor-foreground);
+  --brodiac-hover-bg: rgba(0, 0, 0, 0.1);
+  --brodiac-accent-1: var(--vscode-editor-selectionBackground);
+  --brodiac-accent-2: var(--vscode-terminal-ansiBlue);
+
+  --brodiac-fg-opacity-10: color-mix(
+    in srgb,
+    var(--brodiac-foreground) 10%,
+    transparent
+  );
+
+  --brodiac-fg-opacity-20: color-mix(
+    in srgb,
+    var(--brodiac-foreground) 10%,
+    transparent
+  );
+
+  --vscode-list-inactiveSelectionBackground: var(--brodiac-fg-opacity-10);
+  --vscode-list-hoverBackground: var(--brodiac-fg-opacity-10);
+
+  --quickInputBorder: var(--brodiac-accent-1);
+  --vscode-quickInput-background: var(--brodiac-background);
+}
+
+.active .current-line {
+  background: var(--vscode-editor-lineHighlightBackground);
+  border-right: 1px solid var(--brodiac-fg-opacity-10);
+}
+
+.terminal-tab .monaco-icon-description-container {
+  display: none;
+}
+
+.action-item.menu-entry[title^="New Terminal"],
+.action-item.menu-entry[title^="Open Changes"] {
+  display: none;
+}
+
+.monaco-workbench .codicon[class*="codicon-"] {
+  font-size: 16px !important;
+}
+
+.margin-view-overlays {
+  width: calc(100% - 1px) !important;
+  border-right: 1px solid var(--brodiac-fg-opacity-10);
+}
+
+* {
+  font-size: 13px !important;
+  font-family: var(--font-family);
+}
+
+.extensions-viewlet > .header {
+  padding: 0px !important;
+}
+
+.extensions-viewlet > .header .suggest-input-container {
+  padding: 4px 12px !important;
+  border-radius: none !important;
+  border: none !important;
+  border-bottom: 1px solid var(--vscode-input-border) !important;
+}
+
+/* .monaco-workbench
+  .part.statusbar
+  > .items-container
+  > .statusbar-item[id^="design4pro"] {
+  order: -1;
+  color: #ff0;
+  text-transform: uppercase;
+  background: #111;
+  padding-left: 12px;
+  padding-right: 12px;
+} */
+
+.monaco-workbench
+  .part.statusbar
+  > .items-container
+  > .statusbar-item[aria-label^="sync"] {
+  display: none;
+}
+
+.monaco-workbench .editor-instance .xterm,
+.monaco-workbench .pane-body.integrated-terminal .xterm {
+  top: 0px;
+}
+
+.title.title-border-bottom {
+  border-bottom: 1px solid var(--vscode-editor-10);
+}
+
+.part.sidebar.left .title-actions {
+  display: none;
+}
+
+.part.sidebar.left .composite.title {
+  border-bottom: 1px solid var(--vscode-tab-border);
+}
+
+.part.statusbar.status-border-top {
+  border-top: 1px solid var(--brodiac-fg-opacity-10);
+}
+
+.title.title-border-bottom {
+  border-bottom: none;
+}
+
+.statusbar-item[aria-label="-- NORMAL --"] {
+  color: var(--vscode-terminal-ansiBrightBlue);
+  background: var(--brodiac-background);
+}
+
+.statusbar-item[aria-label="-- INSERT --"] {
+  color: var(--vscode-terminal-ansiBrightGreen);
+  background: var(--brodiac-background);
+}
+
+.statusbar-item[aria-label="-- VISUAL --"] {
+  color: var(--vscode-terminal-ansiBrightMagenta);
+  background: var(--brodiac-background);
+}
+
+.statusbar-item[aria-label="-- REPLACE --"] {
+  color: var(--vscode-terminal-ansiBrightRed);
+  background: var(--brodiac-background);
+}
+
+.statusbar-item[aria-label="-- VISUAL LINE --"] {
+  color: #000;
+  background: var(--vscode-terminal-ansiBrightPurple);
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title.breadcrumbs
+  .breadcrumbs-control
+  .monaco-breadcrumb-item
+  .codicon[class*="codicon-symbol-"] {
+  display: none;
+}
+
+.statusbar-item[id="vscodevim.vim.primary"][aria-label^=":"] {
+  color: #f0f;
+  background: var(--brodiac-background);
+}
+
+h2[title^="Explorer"] {
+  position: relative;
+  left: -74px;
+  color: #f00 !important;
+  overflow: visible;
+}
+
+h2[title^="Explorer"]:after {
+  content: " //";
+}
+
+.settings-editor
+  > .settings-header
+  > .search-container
+  > .settings-count-widget {
+  border: none !important;
+  margin: 4px 0;
+}
+
+.monaco-select-box,
+.monaco-inputbox,
+.monaco-custom-toggle,
+.monaco-workbench .notifications-list-container .notification-list-item,
+.monaco-button,
+.suggest-input-container,
+.setting-item-contents {
+  border-radius: 6px;
+}
+
+.margin {
+  box-shadow: -1px 0px 0px #f0f;
+}
+
+.monaco-tree-sticky-container {
+  display: none;
+}
+
+.scrollbar {
+  display: none !important;
+}
+
+.xterm-decoration-overview-ruler {
+  display: none;
+}
+
+.monaco-button,
+.suggest-input-container {
+  padding: 4px 12px !important;
+}
+
+.inline-title-bar:not(.horizontal-activitybar):not(.activitybar-top):not(
+    .statusbar-top
+  )
+  .monaco-workbench.mac.no-activity-bar:not(.sidebar-right):not(.fullscreen)
+  .inline-titlebar-placeholder {
+  padding-left: 0px;
+}
+
+.quick-input-widget {
+  border-color: var(--brodiac-accent-2) !important;
+  border-width: 2px !important;
+  border-radius: 6px;
+  background: var(--brodiac-background);
+}
+
+.quick-input-header {
+  border-bottom: 2px solid var(--brodiac-accent-2) !important;
+  margin-bottom: 5px;
+}
+
+.quick-input-widget {
+  top: 240px !important;
+  z-index: 9999 !important;
+}
+
+.quick-input-widget * {
+  outline: none !important;
+}
+
+.quick-input-header {
+  padding: 0px !important;
+}
+
+.quick-input-header .monaco-inputbox {
+  border: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.quick-input-header .monaco-inputbox .input {
+  padding: 8px 12px;
+}
